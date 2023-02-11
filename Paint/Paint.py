@@ -60,7 +60,7 @@ color_frame = Frame(frame,bg='black',borderwidth=10)
 
 menu_bar = Menu(root)
 root.config(menu=menu_bar)
-submenu = Menu(menu_bar)
+submenu = Menu(menu_bar,tearoff=0)
 
 menu_bar.add_cascade(label='File', menu=submenu)
 submenu.add_command(label='New Canvas',command=new_canvas)
